@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo_17</title>
+    <style>
+        body{
+            background: linear-gradient(to right,rgb(0, 140, 69) 33%, rgb(244, 249, 255) 33%,rgb(205, 33, 42) 33%);
+            
+        }
+    </style>
+    <script>
+        function pegarElementosPelaClasse(){
+            var itens = document.getElementsByClassName("cor_nao");
+            alert(itens);
+            alert(itens[0].innerHTML);
+            alert(itens[1]);
+            console.log(itens);
+            console.log(itens[0].innerHTML);
+            console.log(itens);
+        }
+    </script>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h4>exemplo_17 - Pegando Valores com getElementByIdClassName</h4>
+    <ul>
+        <li class="cor_sim">Item 01</li>
+        <li class="cor_nao">Item 02</li>
+        <li class="cor_sim">Item 03</li>
+        <li class="cor_nao">Item 04</li>
+    </ul> <br><br>
+    <input type="button" value="ok" onclick="pegarElementosPelaClasse()">
+</body>
+</html>

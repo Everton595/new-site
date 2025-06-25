@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo_18 introdução</title>
+     <style>
+        body{
+            background: linear-gradient(to right,rgb(0, 140, 69), rgb(244, 249, 255),rgb(205, 33, 42));
+            
+        }
+    </style>
+    <script>
+        function pegarElementoPelaTagNome(){
+            var elementos=document.getElementsByTagName("input");
+            alert(elementos);
+            alert(elementos[0].innerHTML);
+            alert(elementos[1].value);
+            alert(elementos[2].type);
+            console.log(elementos);
+            console.log(elementos[0].innerHTML);
+            console.log(elementos[1].value);
+            console.log(elementos[2].type);
+        }
+    </script>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h4>Exemplo 18 - Pegando Valores com getElementByIdTagName</h4>
+    <form>
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" value="SENAI"><br><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" value="senai@sp.senai.br"><br><br>
+        <input type="button" value="ok" onclick="pegarElementoPelaTagNome()">
+    </form>
+</body>
+</html>
